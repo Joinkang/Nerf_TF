@@ -1,0 +1,1 @@
+{"n_coarse": 64, "n_fine": 128, "pos_emb_xyz": 10, "pos_emb_dir": 4, "n_layers": 8, "dense_units": 256, "skip_layer": 4}

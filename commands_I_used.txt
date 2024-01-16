@@ -1,0 +1,13 @@
+python train.py --data_dir data/nerf_synthetic/mic --img_wh 128 --batch_size 2 --name mic_256 --white_bg --num_epochs 200 --ray_chunks 512
+
+python train_single.py --data_dir data/nerf_synthetic/mic --img_wh 128 --batch_size 1 --name mic_128 --white_bg --num_epochs 200 
+
+python train_single.py --data_dir data/nerf_synthetic/mic --img_wh 128 --batch_size 1 --name mic_128 --white_bg --num_epochs 200 --ray_chunks 512 --num_units 512
+
+python train.py --data_dir data/nerf_synthetic/mic --img_wh 128 --batch_size 1 --name mic_128 --white_bg --num_epochs 200 --ray_chunks 512 --num_layers 4
+
+kji\Nerf\keras_nerf-main\keras_nerf-main>python train.py --data_dir data/nerf_synthetic/mic --img_wh 128 --batch_size 1 --name mic_128 --white_bg --num_epochs 300 --ray_chunks 1024 --num_units 128 --num_layers 4 --skip_layer 2
+
+
+python train.py --data_dir data/nerf_synthetic/mic --img_wh 128 --batch_size 1 --name mic_128 --white_bg --num_epochs 300 --ray_chunks 1024 --num_units 64 --num_layers 4 --skip_layer 2
+
